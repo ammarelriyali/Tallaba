@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:onClick="openViewPost"
+    app:cardCornerRadius="@dimen/text_10"
+    app:cardElevation="4dp"
+    android:id="@+id/card_view_posts">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:onClick="openProfileCommunity"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="40dp">
+
+                <ImageView
+                    android:id="@+id/post_image_rec"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#233DD1"
+                    android:scaleType="fitCenter" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/post_name_rec"
+                    style="@style/textPostHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:ellipsize="end"
+                    android:text="Amar elarby elreyaly" />
+
+                <TextView
+                    android:id="@+id/post_is_instructor_rec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="(instructor)"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/post_date_rec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="1/2/2014"
+                    android:textSize="@dimen/text_10" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/post_dots_rec"
+                style="@style/AppTheme.Components.ImageView.Button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="openMenuPostRec"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_dots" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/post_content_rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto"
+            android:maxLines="3"
+            android:text="The font was designed entirely in-house by Christian Robertson who previously had released an expanded Ubuntu-Title font through his personal type foundry Betatype.[7][8] The font was officially made available for free download on January 12, 2012, on the newly launched Android Design website.  Compared to Android's previous system font, the humanist sans-serif Droid, Roboto belongs to the neo-grotesque genre of sans-serif typefaces. It includes Thin, Light, Regular, Medium, Bold and Black weights with matching oblique styles rather than true italics. It also includes condensed styles in Light, Regular and Bold, also with matching oblique designs.The font was designed entirely in-house by Christian Robertson who previously had released an expanded Ubuntu-Title font through his personal type foundry Betatype.[7][8] The font was officially made available for free download on January 12, 2012, on the newly launched Android Design website.  Compared to Android's previous system font, the humanist sans-serif Droid, Roboto belongs to the neo-grotesque genre of sans-serif typefaces. It includes Thin, Light, Regular, Medium, Bold and Black weights with matching oblique styles rather than true italics. It also includes condensed styles in Light, Regular and Bold, also with matching oblique designs.The font was designed entirely in-house by Christian Robertson who previously had released an expanded Ubuntu-Title font through his personal type foundry Betatype.[7][8] The font was officially made available for free download on January 12, 2012, on the newly launched Android Design website.  Compared to Android's previous system font, the humanist sans-serif Droid, Roboto belongs to the neo-grotesque genre of sans-serif typefaces. It includes Thin, Light, Regular, Medium, Bold and Black weights with matching oblique styles rather than true italics. It also includes condensed styles in Light, Regular and Bold, also with matching oblique designs.The font was designed entirely in-house by Christian Robertson who previously had released an expanded Ubuntu-Title font through his personal type foundry Betatype.[7][8] The font was officially made available for free download on January 12, 2012, on the newly launched Android Design website.  Compared to Android's previous system font, the humanist sans-serif Droid, Roboto belongs to the neo-grotesque genre of sans-serif typefaces. It includes Thin, Light, Regular, Medium, Bold and Black weights with matching oblique styles rather than true italics. It also includes condensed styles in Light, Regular and Bold, also with matching oblique designs."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_post_Photo_rec"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/post_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/post_icon_count_like_rec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableStart="@drawable/ic_like_empty"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:onClick="likeRec"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="400"
+                    android:theme="@style/AppTheme.Components.ImageView.Button" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/post_comment_rec"
+                    style="@style/AppTheme.Components.ImageView.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableStart="@drawable/ic_comment"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:onClick="comment"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="400" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

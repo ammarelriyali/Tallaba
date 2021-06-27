@@ -1,0 +1,8 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.( ³‹ÿÿÿÿÿ
+=
+java:S1659""Declare "name" on a separate line.(ùÔûÿÿÿÿ
+=
+java:S1659""Declare "date" on a separate line.(ùÔûÿÿÿÿ
+>
+java:S1659"#Declare "photo" on a separate line.(ùÔûÿÿÿÿ

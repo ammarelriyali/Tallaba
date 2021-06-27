@@ -1,0 +1,25 @@
+
+p
+@app/src/main/java/com/web/app/Tallaba/Activity/HomeActivity.java,1/5/157554912af1f08bfef2e9a362277ee5cd18881e
+l
+<app/src/main/java/com/web/app/Tallaba/api/PostInterface.java,7/4/74cb793c7a35128a2d8a3c882cd36545ad0ff38c
+x
+Happ/src/main/java/com/web/app/Tallaba/Fragment/ui/home/HomeFragment.java,8/a/8a1bad349db7926b184988178c51ca45fc7d71e2
+@
+app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164
+e
+5app/src/main/java/com/web/app/Tallaba/Model/Post.java,9/0/90e10d73e04378cdf6d40170f1c9b3d0008c5754
+n
+>app/src/main/java/com/web/app/Tallaba/api/RetrofitBuldier.java,1/0/104ee9866460f9aa85c05c7f870347f706da29b5
+P
+ app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
+n
+>app/src/main/java/com/web/app/Tallaba/ViewModel/VMPostRec.java,8/1/81b562115f814512f26123e1ca93f0ad8c521ca6
+u
+Eapp/src/main/java/com/web/app/Tallaba/Adapter/AdapterRecGpaChild.java,1/9/19480f84972c093f4367af610f6594b49b544b79
+p
+@app/src/main/java/com/web/app/Tallaba/Adapter/AdapterRecGpa.java,8/4/8413340a2fae2cca9c82a4314c945d3313d8b8e8
+u
+Eapp/src/main/java/com/web/app/Tallaba/Adapter/AdapterRecycleHome.java,f/e/fe61f9ae81d7a9f5de7aa714e36be790ded944a6
+{
+Kapp/src/main/java/com/web/app/Tallaba/Adapter/AdapterRecyclerHomeChild.java,2/b/2b3ca569396b722b371265b8d1ebb4a2b9899a36

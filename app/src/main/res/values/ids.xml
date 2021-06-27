@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="comment" type="id"></item>
+    <item name="like" type="id"></item>
+    <item name="key_image_remove" type="id"></item>
+    <item name="key_reply_id" type="id"></item>
+    <item name="key_reply_content" type="id"></item>
+    <item name="key_comment_id" type="id"></item>
+    <item name="key_comment_content" type="id"></item>
+    <item name="key_post_id" type="id" />
+    <item name="key_munit" type="id" />
+    <item name="key_hour" type="id" />
+    <item name="key_user_id" type="id">userid</item>
+
+    \m</resources>

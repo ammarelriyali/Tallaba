@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="4dp"
+    android:elevation="4dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/course_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Android team is constantly releasing new updates and improvements to the Android Framework. One of the components that received major updates i"
+            android:theme="@style/textProfileHeader"
+            app:layout_constraintEnd_toStartOf="@+id/course_file_manager"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/course_instructor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="dr.Amar"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintEnd_toStartOf="@+id/course_file_manager"
+            app:layout_constraintStart_toStartOf="@+id/course_name"
+            app:layout_constraintTop_toBottomOf="@+id/course_name" />
+
+        <ImageView
+            android:id="@+id/qrcode"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:onClick="scanQR"
+            android:theme="@style/AppTheme.Components.ImageView.Button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_qr_code_scanner" />
+
+        <ImageView
+            android:id="@+id/course_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.Components.ImageView.Button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qrcode"
+            app:srcCompat="@drawable/ic_chat"
+            android:onClick="courses"/>
+
+        <ImageView
+            android:id="@+id/course_file_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.Components.ImageView.Button"
+            app:layout_constraintEnd_toStartOf="@+id/course_chat"
+            app:layout_constraintTop_toBottomOf="@+id/qrcode"
+            app:srcCompat="@drawable/ic_folder"
+            android:onClick="courses"/>
+
+        <ImageView
+            android:id="@+id/dots_file_manager"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="7dp"
+            app:layout_constraintEnd_toEndOf="@+id/course_file_manager"
+            app:layout_constraintTop_toTopOf="@+id/course_file_manager"
+            app:srcCompat="@drawable/ic_point"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/dots_chat"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            app:layout_constraintEnd_toEndOf="@+id/course_chat"
+            app:layout_constraintTop_toTopOf="@+id/course_chat"
+            app:srcCompat="@drawable/ic_point"
+            android:visibility="gone"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

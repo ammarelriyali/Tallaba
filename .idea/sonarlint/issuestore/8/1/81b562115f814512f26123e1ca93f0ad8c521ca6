@@ -1,0 +1,16 @@
+
+J
+java:S3740"/Provide the parametrized type for this generic.(õ’£©úÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(õ’£©úÿÿÿÿ
+h
+java:S1192"KDefine a constant instead of duplicating this literal "12-10-2020" 5 times.(šëš8·÷¶°›/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û¯ô
+q
+java:S1104"OMake mld a static final constant or non-public and provide accessors if needed.(õ’£©úÿÿÿÿ8ÌÀÚ¯›/
+R
+java:S1128"0Remove this unused import 'retrofit2.http.POST'.(Ä­×”øÿÿÿÿ8×ıË¯›/
+
+java:S1186%"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(’ˆ§¾8ëù·¯›/
+
+java:S1186/"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‘Åª8ìù·¯›/

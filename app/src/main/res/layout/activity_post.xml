@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:onClick="openProfileUser"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/post_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#233DD1"
+                android:scaleType="fitCenter" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/post_name"
+            style="@style/textPostHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Amar elarby elrealy"
+            app:layout_constraintEnd_toStartOf="@+id/post_dots"
+            app:layout_constraintStart_toEndOf="@+id/materialCardView"
+            app:layout_constraintTop_toTopOf="@+id/materialCardView" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="@+id/post_name"
+            app:layout_constraintTop_toBottomOf="@+id/post_name">
+
+            <TextView
+                android:id="@+id/post_is_instructor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Instructor)"
+                android:textSize="@dimen/text_10"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/post_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto"
+                android:maxLines="1"
+                android:text="1/2/2014"
+                android:textSize="@dimen/text_10" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/post_content"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="The font was designed entirely in-house by Christian Robertson who previously had released an expanded Ubuntu-Title font through his personal type foundry Betatype.[7][8] The font was officially made available for free download on January 12, 2012, on the newly launched Android Design website.  Compared to Android's previous system font, the humanist sans-serif Droid, Roboto belongs to the neo-grotesque genre of sans-serif typefaces. It includes Thin, Light, Regular, Medium, Bold and Black weights with matching oblique styles rather than true italics. It also includes condensed styles in Light, Regular and Bold, also with matching oblique designs.The font was designed entirely in-house by Christian Robertson who previously had released an expanded Ubuntu-Title font through his personal type foundry Betatype.[7][8] The font was officially made available for free download on January 12, 2012, on the newly launched Android Design website.  Compared to Android's previous system font, the humanist sans-serif Droid, Roboto belongs to the neo-grotesque genre of sans-serif typefaces. It includes Thin, Light, Regular, Medium, Bold and Black weights with matching oblique styles rather than true italics. It also includes condensed styles in Light, Regular and Bold, also with matching oblique designs.The font was designed entirely in-house by Christian Robertson who previously had released an expanded Ubuntu-Title font through his personal type foundry Betatype.[7][8] The font was officially made available for free download on January 12, 2012, on the newly launched Android Design website.  Compared to Android's previous system font, the humanist sans-serif Droid, Roboto belongs to the neo-grotesque genre of sans-serif typefaces. It includes Thin, Light, Regular, Medium, Bold and Black weights with matching oblique styles rather than true italics. It also includes condensed styles in Light, Regular and Bold, also with matching oblique designs.The font was designed entirely in-house by Christian Robertson who previously had released an expanded Ubuntu-Title font through his personal type foundry Betatype.[7][8] The font was officially made available for free download on January 12, 2012, on the newly launched Android Design website.  Compared to Android's previous system font, the humanist sans-serif Droid, Roboto belongs to the neo-grotesque genre of sans-serif typefaces. It includes Thin, Light, Regular, Medium, Bold and Black weights with matching oblique styles rather than true italics. It also includes condensed styles in Light, Regular and Bold, also with matching oblique designs."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_image_view_post"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/post_content" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_image_view_post">
+
+            <TextView
+                android:id="@+id/post_icon_count_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableStart="@drawable/ic_like_empty"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:onClick="like"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="400"
+                android:theme="@style/AppTheme.Components.ImageView.Button" />
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycl_comment_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_input_commnet_view_post" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_commnet_view_post"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:boxBackgroundColor="#FFFFFF"
+
+            app:startIconDrawable="@drawable/ic_comment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_commnet_view_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add Comment"
+                android:inputType="textPersonName"
+                android:imeOptions="actionDone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/post_dots"
+            style="@style/AppTheme.Components.ImageView.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:onClick="openMenuPost"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_dots" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="@+id/recycler_image_view_post"
+            app:layout_constraintStart_toStartOf="@+id/recycler_image_view_post"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_image_view_post" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/text_input_commnet_view_post"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,10 @@
+
+J
+java:S1066Y"/Merge this if statement with the enclosing one.(ΨΒάψÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”Χ²υ
+T
+java:S1874)"9Remove this use of "getDefaultDisplay"; it is deprecated.(„ίω¶ÿÿÿÿÿ
+M
+java:S1874)"2Remove this use of "getMetrics"; it is deprecated.(„ίω¶ÿÿÿÿÿ
+X
+java:S1126="BReplace this if-then-else statement by a single method invocation.(χ¦¦Ò
